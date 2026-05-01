@@ -90,6 +90,49 @@ Interactive traffic map powered by **PyDeck** showing:
 
 ---
 
+## 📝 Traffic Map Explanation
+
+This dashboard includes an interactive **GIS Traffic Map** that visualizes real-time simulated traffic conditions across selected Abuja districts.
+
+### 🔍 Sidebar Filters
+
+Users can filter the map by:
+
+- **District** (e.g., Maitama, Wuse)  
+- **Traffic Level** (Light, Moderate, Heavy)
+
+This allows focused traffic analysis for specific locations.
+
+### 🗺️ Route Map Interpretation
+
+Colored route lines represent roads connecting key locations.  
+Each route displays estimated travel time in **seconds**.
+
+Examples:
+
+- **181 sec** ≈ 3 minutes  
+- **674 sec** ≈ 11 minutes  
+
+### 🚦 Traffic Color Legend
+
+- 🟢 **Green** = Light Traffic  
+- 🟡 **Yellow** = Moderate Traffic  
+- 🔴 **Red** = Heavy Traffic  
+
+### 📌 Benefits of the Map
+
+- Detect congested roads quickly  
+- Compare route travel times  
+- Support route optimization  
+- Assist smart city planning  
+- Improve transport decision-making  
+
+### 🧠 Summary
+
+The map functions like a mini **AI-powered Google Maps Traffic System for Abuja**, combining GIS visualization and traffic intelligence.
+
+---
+
 ## 🛠️ Tech Stack
 
 - Python  
@@ -104,7 +147,7 @@ Interactive traffic map powered by **PyDeck** showing:
 
 ## 📂 Project Structure
 
-```bash id="3b9qv1"
+```bash
 Multi-Districts-Smart-Traffic-Intelligence-System-Abuja/
 │── assets/
 │   ├── Dashboard.png
