@@ -1,4 +1,4 @@
-# 🚦 Multi-Districts Smart Traffic Intelligence System (Abuja)
+# 🚦 Multi-Districts Smart Traffic Intelligence System (Abuja) 
 
 An AI-powered traffic intelligence platform built with **Streamlit**, **Machine Learning**, **GIS Mapping**, and **Route Optimization Algorithms** to analyze road traffic conditions across multiple Abuja districts, predict traffic flow, and recommend the fastest routes.
 
