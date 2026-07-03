@@ -107,6 +107,7 @@ df["mid_lat"] = (df["start_lat"] + df["end_lat"]) / 2
 df["mid_lon"] = (df["start_lon"] + df["end_lon"]) / 2
 df["label"] = df["adjusted_time"].astype(int).astype(str) + " sec"
 
+
 # ----------------------------
 # MODEL
 # ----------------------------
@@ -122,8 +123,8 @@ if len(df) > 2:
     y_pred = model.predict(X_test)
 
     st.subheader("🤖 Model Performance")
-st.write(f"R² Score: {r2:.2f}")
-st.write(f"MAE: {mae:.2f}")
+    st.write(f"R² Score: {r2_score(y_test, y_pred):.2f}")
+    st.write(f"MAE: {mean_absolute_error(y_test, y_pred):.2f}")
 
 # ----------------------------
 # ROUTE OPTIMIZATION
