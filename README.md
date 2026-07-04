@@ -111,7 +111,7 @@ Built with **PyDeck**, the GIS dashboard displays:
 
 ## 🖥️ Dashboard
 
-Dashboard.png
+![Dashboard](assets/dashboard.png)
 
 ---
 
