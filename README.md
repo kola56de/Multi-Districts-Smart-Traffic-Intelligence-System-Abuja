@@ -1,201 +1,326 @@
-# 🚦 Multi-Districts Smart Traffic Intelligence System (Abuja) 
+# 🚦 Multi-District Smart Traffic Intelligence System (Abuja)
 
-An AI-powered traffic intelligence platform built with **Streamlit**, **Machine Learning**, **GIS Mapping**, and **Route Optimization Algorithms** to analyze road traffic conditions across multiple Abuja districts, predict traffic flow, and recommend the fastest routes.
+An AI-powered traffic intelligence platform built with **Python, Streamlit, Machine Learning, GIS Mapping, and Route Optimization Algorithms** to analyze traffic conditions across multiple districts in Abuja, predict traffic flow, and recommend the fastest travel routes.
 
-🔗 **Live App:** https://olonisakin-k-pa.streamlit.app/
-
----
-
-## 📌 Project Overview
-
-Urban traffic congestion remains a major challenge in developing smart cities. This project provides an intelligent traffic monitoring and route optimization solution for Abuja using historical road data, predictive analytics, and interactive mapping.
-
-The system covers multiple districts including:
-
-- Maitama  
-- Wuse  
-- Garki  
-- Area 10  
-- Eagle Square  
-- Berger Axis  
-
-Users can simulate traffic conditions, analyze congestion, and identify the best routes based on travel time.
+The project demonstrates how **Artificial Intelligence, Data Science, Geospatial Analytics, and Graph Algorithms** can be integrated into a single intelligent transportation system to support smarter mobility and urban planning.
 
 ---
 
-## 🚀 Features
+# 🌐 Live Application
 
-### 🕒 Time of Day Simulation
+🔗 https://olonisakin-k-pa.streamlit.app/
 
-Simulate traffic patterns based on:
+---
 
-- Off-Peak  
-- Normal  
-- Rush Hour  
+# 📌 Project Overview
 
-### 🔍 Smart Filters
+Urban traffic congestion remains one of the biggest challenges facing modern cities.
+
+This project was developed to demonstrate how Artificial Intelligence can support intelligent transportation systems by combining:
+
+- Machine Learning
+- GIS Visualization
+- Route Optimization
+- Interactive Analytics
+
+into a single decision-support platform.
+
+The system currently covers multiple locations across Abuja including:
+
+- Maitama
+- Wuse
+- Garki
+- Berger Junction
+- Eagle Square
+- Area 10
+
+Users can simulate different traffic conditions, visualize congestion on an interactive GIS map, and identify the fastest route between locations.
+
+---
+
+# 🚀 Key Features
+
+## 🕒 Time-of-Day Simulation
+
+Simulate traffic conditions during:
+
+- Off-Peak
+- Normal Traffic
+- Rush Hour
+
+---
+
+## 🔍 Smart Traffic Filters
 
 Filter traffic routes by:
 
-- District  
+- District
 - Traffic Level (Light / Moderate / Heavy)
 
-### 🤖 Machine Learning Prediction
+---
 
-Uses **Random Forest Regressor** to evaluate traffic speed performance using:
+## 🤖 Machine Learning Prediction
 
-- Route Length  
-- Adjusted Travel Time  
+A **Random Forest Regressor** predicts traffic speed using:
 
-### 📊 Model Performance
-
-Displays:
-
-- **R² Score**
-- **Mean Absolute Error (MAE)**
-
-### 🔄 Route Optimization
-
-Uses **NetworkX shortest path algorithm** to determine:
-
-- Fastest route between two locations  
-- Estimated travel time (ETA)
-
-### 🗺️ GIS Traffic Map
-
-Interactive traffic map powered by **PyDeck** showing:
-
-- Live route lines  
-- Traffic congestion colors  
-- Route labels  
-- Highlighted best path
-
-### 🧭 Traffic Legend
-
-- 🟢 Light Traffic  
-- 🟡 Moderate Traffic  
-- 🔴 Heavy Traffic  
+- Route Length
+- Adjusted Travel Time
 
 ---
 
-## 🖼️ App Screenshots
+## 📊 Model Performance Dashboard
 
-### Dashboard
+Displays key evaluation metrics including:
 
-![Dashboard](assets/Dashboard.png)
-
-### Traffic Map
-
-![Traffic Map](assets/Traffic%20Map.png)
+- R² Score
+- Mean Absolute Error (MAE)
 
 ---
 
-## 📝 Traffic Map Explanation
+## 🔄 Route Optimization
 
-This dashboard includes an interactive **GIS Traffic Map** that visualizes real-time simulated traffic conditions across selected Abuja districts.
+Uses the **NetworkX Shortest Path Algorithm** to determine:
+
+- Fastest route
+- Estimated Travel Time (ETA)
+
+---
+
+## 🗺️ Interactive GIS Traffic Map
+
+Built with **PyDeck**, the GIS dashboard displays:
+
+- Road network visualization
+- Traffic congestion colours
+- Route labels
+- Highlighted optimal routes
+
+---
+
+## 🧭 Traffic Legend
+
+🟢 Light Traffic
+
+🟡 Moderate Traffic
+
+🔴 Heavy Traffic
+
+---
+
+# 📸 Application Screenshots
+
+## 🖥️ Dashboard
+
+Dashboard
+
+---
+
+## 🗺️ GIS Traffic Map
+
+Traffic Map
+
+---
+
+# 📍 GIS Traffic Map Overview
+
+The interactive GIS Traffic Map enables users to explore traffic conditions across multiple districts in Abuja.
 
 ### 🔍 Sidebar Filters
 
-Users can filter the map by:
+Users can filter the dashboard by:
 
-- **District** (e.g., Maitama, Wuse)  
-- **Traffic Level** (Light, Moderate, Heavy)
+- District
+- Traffic Level
 
-This allows focused traffic analysis for specific locations.
+making it easy to focus on specific areas.
 
-### 🗺️ Route Map Interpretation
+---
 
-Colored route lines represent roads connecting key locations.  
-Each route displays estimated travel time in **seconds**.
+### 🗺️ Route Visualization
+
+Each coloured line represents a road segment connecting two locations.
+
+The labels displayed on each segment indicate the estimated travel time.
 
 Examples:
 
-- **181 sec** ≈ 3 minutes  
-- **674 sec** ≈ 11 minutes  
-
-### 🚦 Traffic Color Legend
-
-- 🟢 **Green** = Light Traffic  
-- 🟡 **Yellow** = Moderate Traffic  
-- 🔴 **Red** = Heavy Traffic  
-
-### 📌 Benefits of the Map
-
-- Detect congested roads quickly  
-- Compare route travel times  
-- Support route optimization  
-- Assist smart city planning  
-- Improve transport decision-making  
-
-### 🧠 Summary
-
-The map functions like a mini **AI-powered Google Maps Traffic System for Abuja**, combining GIS visualization and traffic intelligence.
+- **181 sec ≈ 3 minutes**
+- **674 sec ≈ 11 minutes**
 
 ---
 
-## 🛠️ Tech Stack
+### 🚦 Traffic Colours
 
-- Python  
-- Streamlit  
-- Pandas  
-- PyDeck  
-- NetworkX  
-- Scikit-learn  
-- Random Forest Regression  
+🟢 Green — Light Traffic
+
+🟡 Yellow — Moderate Traffic
+
+🔴 Red — Heavy Traffic
 
 ---
 
-## 📂 Project Structure
+### 📌 Benefits
 
-```bash
+The GIS dashboard helps users:
+
+- Identify congested roads
+- Compare travel times
+- Select faster routes
+- Support transportation planning
+- Improve mobility decisions
+
+---
+
+# 🧠 Machine Learning Model
+
+## Algorithm
+
+**Random Forest Regressor**
+
+### Input Features
+
+- Route Length (km)
+- Adjusted Travel Time (seconds)
+
+### Predicted Output
+
+- Average Travel Speed (km/h)
+
+---
+
+# 📊 Model Performance & Key Learning
+
+This project was developed as a **prototype** to demonstrate the integration of **Machine Learning, GIS visualization, route optimization, and interactive analytics** into a complete intelligent transportation platform.
+
+One interesting observation during development was that the model's **R² score changed slightly between application runs.**
+
+After investigating, I found that this was **not caused by an error in the code**. The variation occurred because the model was retrained each time using a different random split of the available data into training and testing sets. With a relatively small demonstration dataset, different train-test splits naturally produce different evaluation results.
+
+This reinforced an important lesson in Machine Learning:
+
+> **Model performance depends not only on selecting an appropriate algorithm but also on the quality, quantity, and representativeness of the training data, as well as a reproducible evaluation strategy.**
+
+Although the predictive model is still being refined, the project successfully demonstrates the integration of:
+
+- Machine Learning
+- GIS Mapping
+- Route Optimization
+- Interactive Dashboards
+- Traffic Analytics
+- Cloud Deployment
+
+The next phase of development will focus on:
+
+- Expanding the traffic dataset
+- Using a fixed random seed (`random_state`) for reproducible experiments
+- Comparing multiple regression algorithms
+- Improving feature engineering
+- Increasing predictive accuracy
+- Integrating real-time traffic data
+
+This project demonstrates not only a machine learning model but the design of an end-to-end intelligent transportation system.
+
+---
+
+# 🛠️ Technology Stack
+
+- Python
+- Streamlit
+- Pandas
+- Scikit-learn
+- NetworkX
+- PyDeck
+- Machine Learning
+- GIS & Geospatial Analytics
+
+---
+
+# 📂 Project Structure
+
+```text
 Multi-Districts-Smart-Traffic-Intelligence-System-Abuja/
 │── assets/
 │   ├── Dashboard.png
-│   └── Traffic Map.png
+│   ├── Traffic Map.png
 │── dad8.py
 │── requirements.txt
+│── README.md
 ```
+
 ---
-⚙️ Installation & Setup
-1️⃣ Clone Repository
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
 ```bash
-git clone https://github.com/yourusername/Multi-Districts-Smart-Traffic-Intelligence-System-Abuja.git
+git clone https://github.com/kola56de/Multi-Districts-Smart-Traffic-Intelligence-System-Abuja.git
+
 cd Multi-Districts-Smart-Traffic-Intelligence-System-Abuja
 ```
----
-2️⃣ Install Dependencies
+
+## 2️⃣ Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
----
-3️⃣ Run App
+
+## 3️⃣ Run the Application
+
 ```bash
 streamlit run dad8.py
 ```
+
 ---
-## 📌 Use Cases
 
-- Smart Mobility Systems  
-- Urban Traffic Monitoring  
-- Route Optimization  
-- Smart City Planning  
-- Traffic Flow Prediction  
-- GIS Transportation Analytics  
+# 🎯 Use Cases
 
-## 📈 Future Improvements
+- Intelligent Transportation Systems
+- Smart Mobility
+- Urban Traffic Monitoring
+- Route Optimization
+- GIS Transportation Analytics
+- Smart City Planning
+- Traffic Flow Prediction
+- Decision Support Systems
 
-- Real-time Google Maps Traffic API  
-- Accident Detection Alerts  
-- Public Transport Route Integration  
-- AI Congestion Forecasting  
-- Power BI Executive Dashboard  
-- Mobile App Version  
+---
 
-## 👨‍💻 Author
+# 📈 Future Improvements
 
-**Kolade Olonisakin**  
-Data Scientist | Machine Learning Engineer | AI Enthusiast  
+- Google Maps Traffic API Integration
+- AI Congestion Forecasting
+- Accident Detection Alerts
+- Public Transport Route Integration
+- GPS-Based Vehicle Tracking
+- Power BI Executive Dashboard
+- Mobile Application
+- Larger Training Dataset (5,000+ Traffic Records)
 
-## ⭐ Support
+---
 
-If you like this project, kindly **star the repository** and share.
+# 👨‍💻 Author
+
+## **Engr. Dr. Kolade Olonisakin, FNSE**
+
+**Civil Engineer | Data Scientist | Machine Learning Engineer | AI Engineer | Transportation & GIS Analytics**
+
+🌍 **Portfolio**
+
+https://olonisakin-emmanuel.github.io/OlonisakinEmmanuel.github.io/
+
+💼 **LinkedIn**
+
+https://www.linkedin.com/in/engr-dr-kolade-olonisakin-fnse/
+
+💻 **GitHub**
+
+https://github.com/kola56de
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, please consider giving it a **⭐ Star** on GitHub.
+
+Feedback, suggestions, and collaboration opportunities are always welcome.
