@@ -14,18 +14,18 @@ The project demonstrates how **Artificial Intelligence, Data Science, Geospatial
 
 # 📌 Project Overview
 
-Urban traffic congestion remains one of the biggest challenges facing modern cities.
+Urban traffic congestion remains one of the biggest challenges facing rapidly growing cities.
 
-This project was developed to demonstrate how Artificial Intelligence can support intelligent transportation systems by combining:
+This project demonstrates how Artificial Intelligence can support intelligent transportation systems by combining:
 
 - Machine Learning
 - GIS Visualization
 - Route Optimization
 - Interactive Analytics
 
-into a single decision-support platform.
+into one intelligent decision-support platform.
 
-The system currently covers multiple locations across Abuja including:
+The application currently covers multiple districts across Abuja, including:
 
 - Maitama
 - Wuse
@@ -34,7 +34,29 @@ The system currently covers multiple locations across Abuja including:
 - Eagle Square
 - Area 10
 
-Users can simulate different traffic conditions, visualize congestion on an interactive GIS map, and identify the fastest route between locations.
+Users can simulate traffic conditions, visualize congestion on an interactive GIS map, and identify the fastest routes between locations.
+
+---
+
+# 🎯 Problem → Solution → Impact
+
+## Problem
+
+Traffic congestion affects travel efficiency, productivity, and urban mobility. Transportation planners and road users often lack simple tools for analyzing traffic conditions and selecting optimal routes.
+
+## Solution
+
+This project integrates **Machine Learning, GIS visualization, graph-based route optimization, and interactive dashboards** into one intelligent transportation platform capable of analyzing traffic conditions and recommending efficient routes.
+
+## Impact
+
+Although developed as a prototype, the application demonstrates how Artificial Intelligence can support:
+
+- Smarter route planning
+- Traffic monitoring
+- Intelligent transportation systems
+- Smart city initiatives
+- Evidence-based transportation planning
 
 ---
 
@@ -70,7 +92,7 @@ A **Random Forest Regressor** predicts traffic speed using:
 
 ## 📊 Model Performance Dashboard
 
-Displays key evaluation metrics including:
+Displays:
 
 - R² Score
 - Mean Absolute Error (MAE)
@@ -81,7 +103,7 @@ Displays key evaluation metrics including:
 
 Uses the **NetworkX Shortest Path Algorithm** to determine:
 
-- Fastest route
+- Fastest Route
 - Estimated Travel Time (ETA)
 
 ---
@@ -117,31 +139,30 @@ Built with **PyDeck**, the GIS dashboard displays:
 
 ## 🗺️ GIS Traffic Map
 
-
-![Dashboard](assets/TrafficMap.png)
+![Traffic Map](assets/TrafficMap.png)
 
 ---
 
 # 📍 GIS Traffic Map Overview
 
-The interactive GIS Traffic Map enables users to explore traffic conditions across multiple districts in Abuja.
+The interactive GIS Traffic Map enables users to explore traffic conditions across multiple Abuja districts.
 
-### 🔍 Sidebar Filters
+### Sidebar Filters
 
-Users can filter the dashboard by:
+Users can filter traffic data by:
 
 - District
 - Traffic Level
 
-making it easy to focus on specific areas.
+allowing focused traffic analysis.
 
 ---
 
-### 🗺️ Route Visualization
+### Route Visualization
 
 Each coloured line represents a road segment connecting two locations.
 
-The labels displayed on each segment indicate the estimated travel time.
+Labels display estimated travel time.
 
 Examples:
 
@@ -150,7 +171,7 @@ Examples:
 
 ---
 
-### 🚦 Traffic Colours
+### Traffic Colours
 
 🟢 Green — Light Traffic
 
@@ -160,13 +181,13 @@ Examples:
 
 ---
 
-### 📌 Benefits
+### Benefits
 
-The GIS dashboard helps users:
+The GIS dashboard enables users to:
 
-- Identify congested roads
+- Detect congested roads
 - Compare travel times
-- Select faster routes
+- Select optimal routes
 - Support transportation planning
 - Improve mobility decisions
 
@@ -189,19 +210,23 @@ The GIS dashboard helps users:
 
 ---
 
-# 📊 Model Performance & Key Learning
+# 📊 Model Development & Evaluation
 
-This project was developed as a **prototype** to demonstrate the integration of **Machine Learning, GIS visualization, route optimization, and interactive analytics** into a complete intelligent transportation platform.
+This application was developed as a **prototype** to demonstrate the integration of **Machine Learning, GIS visualization, graph-based route optimization, and interactive analytics** into a complete intelligent transportation platform.
 
-One interesting observation during development was that the model's **R² score changed slightly between application runs.**
+The current version uses a demonstration dataset to validate the complete end-to-end workflow rather than maximize predictive accuracy.
 
-After investigating, I found that this was **not caused by an error in the code**. The variation occurred because the model was retrained each time using a different random split of the available data into training and testing sets. With a relatively small demonstration dataset, different train-test splits naturally produce different evaluation results.
+One interesting observation during development was that the model's **R² score changed slightly between application runs**.
+
+After investigating, I found that this was **not caused by an error in the code**. The variation occurred because the model was retrained each time using a different random split of the available data into training and testing sets.
+
+With a relatively small demonstration dataset, different train-test splits naturally produce different evaluation results.
 
 This reinforced an important lesson in Machine Learning:
 
 > **Model performance depends not only on selecting an appropriate algorithm but also on the quality, quantity, and representativeness of the training data, as well as a reproducible evaluation strategy.**
 
-Although the predictive model is still being refined, the project successfully demonstrates the integration of:
+Although the predictive model is still evolving, this project successfully demonstrates the integration of:
 
 - Machine Learning
 - GIS Mapping
@@ -217,22 +242,65 @@ The next phase of development will focus on:
 - Comparing multiple regression algorithms
 - Improving feature engineering
 - Increasing predictive accuracy
-- Integrating real-time traffic data
+- Integrating real-time traffic information
 
-This project demonstrates not only a machine learning model but the design of an end-to-end intelligent transportation system.
+The objective of this project is not simply to build a prediction model, but to demonstrate how Artificial Intelligence can power an end-to-end intelligent transportation system.
+
+---
+
+# 🏗️ System Architecture
+
+```text
+Traffic Data
+      │
+      ▼
+Data Processing (Pandas)
+      │
+      ▼
+Machine Learning Model
+(Random Forest Regressor)
+      │
+      ├──────────────┐
+      ▼              ▼
+Traffic Prediction   Route Optimization (NetworkX)
+      │              │
+      └──────┬───────┘
+             ▼
+GIS Visualization (PyDeck)
+             ▼
+Interactive Streamlit Dashboard
+             ▼
+Decision Support for Smart Mobility
+```
 
 ---
 
 # 🛠️ Technology Stack
 
+### Programming
+
 - Python
-- Streamlit
-- Pandas
+
+### Machine Learning
+
 - Scikit-learn
-- NetworkX
+- Random Forest Regressor
+
+### Data Analysis
+
+- Pandas
+
+### Geospatial Analytics
+
 - PyDeck
-- Machine Learning
-- GIS & Geospatial Analytics
+
+### Network Analysis
+
+- NetworkX
+
+### Web Framework
+
+- Streamlit
 
 ---
 
@@ -242,7 +310,7 @@ This project demonstrates not only a machine learning model but the design of an
 Multi-Districts-Smart-Traffic-Intelligence-System-Abuja/
 │── assets/
 │   ├── Dashboard.png
-│   ├── Traffic Map.png
+│   ├── TrafficMap.png
 │── dad8.py
 │── requirements.txt
 │── README.md
@@ -252,7 +320,7 @@ Multi-Districts-Smart-Traffic-Intelligence-System-Abuja/
 
 # ⚙️ Installation
 
-## 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/kola56de/Multi-Districts-Smart-Traffic-Intelligence-System-Abuja.git
@@ -260,13 +328,13 @@ git clone https://github.com/kola56de/Multi-Districts-Smart-Traffic-Intelligence
 cd Multi-Districts-Smart-Traffic-Intelligence-System-Abuja
 ```
 
-## 2️⃣ Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3️⃣ Run the Application
+## Run Application
 
 ```bash
 streamlit run dad8.py
@@ -274,7 +342,7 @@ streamlit run dad8.py
 
 ---
 
-# 🎯 Use Cases
+# 🎯 Applications
 
 - Intelligent Transportation Systems
 - Smart Mobility
@@ -283,11 +351,11 @@ streamlit run dad8.py
 - GIS Transportation Analytics
 - Smart City Planning
 - Traffic Flow Prediction
-- Decision Support Systems
+- Transportation Decision Support
 
 ---
 
-# 📈 Future Improvements
+# 📈 Future Roadmap
 
 - Google Maps Traffic API Integration
 - AI Congestion Forecasting
@@ -296,7 +364,9 @@ streamlit run dad8.py
 - GPS-Based Vehicle Tracking
 - Power BI Executive Dashboard
 - Mobile Application
+- Multi-City Deployment
 - Larger Training Dataset (5,000+ Traffic Records)
+- Advanced Machine Learning Model Comparison
 
 ---
 
@@ -322,6 +392,6 @@ https://github.com/kola56de
 
 # ⭐ Support
 
-If you found this project helpful, please consider giving it a **⭐ Star** on GitHub.
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
 
 Feedback, suggestions, and collaboration opportunities are always welcome.
