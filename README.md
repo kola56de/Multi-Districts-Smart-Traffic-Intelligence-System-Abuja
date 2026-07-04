@@ -117,7 +117,7 @@ Dashboard.png
 
 ## 🗺️ GIS Traffic Map
 
-Traffic Map
+Traffic Map.png
 
 ---
 
