@@ -117,7 +117,7 @@ Built with **PyDeck**, the GIS dashboard displays:
 
 ## 🗺️ GIS Traffic Map
 
-Traffic Map.png
+![Map](assets/Traffic Map.png)
 
 ---
 
